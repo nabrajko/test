@@ -60,13 +60,38 @@ The objective of this project is to conduct a comprehensive analysis of housing 
 ## Regression Model and Results
 
 ### **Approach:**
-- **Model:** We built a **Linear Regression** model to predict housing prices based on numeric features such as square footage, number of bedrooms, and neighborhood.
-- **Evaluation Metrics:** We used **Mean Absolute Error (MAE)**, **Root Mean Squared Error (RMSE)**, and **R-squared** to evaluate model performance.
+- **Model:** We built a **Linear Regression** model to predict housing prices based on numeric features such as square footage, number of bedrooms,bathrooms and neighborhood.
+- **Evaluation Metrics:** We used **Mean Squared Error (RMSE)**, and **R-squared** to evaluate model performance.
+
+- Linear Regression         - MSE: 20109636019.6248, R2: 0.905373
+- Decision Tree             - MSE: 3143092659.1132, R2: 0.985210
+- Random Forest             - MSE: 574204422.6805, R2: 0.997298
+- Gradient Boosting         - MSE: 600651851.4550, R2: 0.997174
+- Support Vector Regressor  - MSE: 206634421425.1758, R2: 0.027673
+  
+
+### **Plot MSE results**
+  
+![image](https://github.com/user-attachments/assets/cab768cf-a573-4527-835a-f218b48b7fe7)
+
+
+
+
+### **Plot R2 results**
+
+![image](https://github.com/user-attachments/assets/b48181b0-9b55-48f8-bc03-e2519f0d8fa7)
+
+
+
 
 ### **Results:**
-- **R-squared:** 0.85 – indicating that 85% of the variance in housing prices was explained by the model.
+- **R-squared:** Indicating that depending on the model, 90-99%  of the variance in housing prices was explained by the model.
 - **Key Predictors:** Location (borough), property size (square footage), and the number of bedrooms were the most influential factors.
 - **Model Insights:** The model suggests that proximity to Manhattan and certain high-demand neighborhoods (e.g., Brooklyn) significantly increase property prices.
+- Based on the evaluation, the best model is: **Random Forest with highest R2 score, 0.9972**
+
+![image](https://github.com/user-attachments/assets/f860a37c-216c-46b0-95b8-2d75cfebb126)
+
 
 ---
 
